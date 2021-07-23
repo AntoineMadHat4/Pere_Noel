@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cher Père Noël</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- barre de navigation en haut de page -->
+    <nav class="barres">
+        <div id="title">
+            <h3>Ma lettre au Père Noël</h3>
+        </div>
+        <ul>
+            <li><a href="#actions">Mes bonnes actions</a></li>
+            <li><a href="#souhaits">Mes souhaits</a></li>
+            <li><a href="#livrer">Livraison</a></li>
+        </ul>
+    </nav>
+
+        <!-- bloc main séparé du fond contenant les différentes sections -->
+        <main>
+            <h1>Cher Père Noël</h1>
+
+
+            <section id="actions">
+                <h2><i class="far fa-star"></i> Mes bonnes actions</h2>
+                <p>Cette année, comme les années précédentes, j'ai été particulièrement gentil. Voici 3 bonnes résolutions de l'année que j'ai réussi à tenir et qui je l'espère te convaincrons de passer chez moi le 24 déposer de beaux cadeaux.</p>
+                <ul>
+                    <li>Je n'ai pas mangé trop de sucre</li>
+                    <li>J'ai donné de l'argent à la fondation Wikimedia</li>
+                    <li>J'ai jeté mon carton dans le bac jaune ... toute l'année</li>
+                </ul>
+                <p>Cette année, j'ai enfin fait ramoner ma cheminée pour éviter que tu ne sois trop sale !</p>
+            </section>
+
+            <section id="souhaits">
+                <h2><i class="far fa-star"></i> Mes souhaits</h2>
+                <div id="cadeaux">
+                    <figure class="cadeaux">
+                        <img src="assets/images/cadeau.jpg" alt="cadeau">
+                        <figcaption>Cadeau 1</figcaption>
+                    </figure>
+                    <figure class="cadeaux">
+                        <img src="assets/images/cadeau.jpg" alt="cadeau">
+                        <figcaption>Cadeau 2</figcaption>
+                    </figure>
+                    <figure class="cadeaux">
+                        <img src="assets/images/cadeau.jpg" alt="cadeau">
+                        <figcaption>Cadeau 3</figcaption>
+                    </figure>
+                    <figure class="cadeaux">
+                        <img src="assets/images/cadeau.jpg" alt="cadeau">
+                        <figcaption>Cadeau 4</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section id="livrer">
+                <h2><i class="far fa-star"></i> Où me livrer ?</h2>
+                <div id="livraison">
+                    <div>
+                        <iframe height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=0.5662894248962403%2C47.73653822238009%2C0.5946135520935059%2C47.74926494796389&amp;layer=mapnik" style="border: 1px solid black"></iframe>
+                        <br/><small>
+                            <a href="https://www.openstreetmap.org/#map=16/47.7429/0.5805">View Larger Map</a>
+                        </small>
+                    </div>
+                    <div id="adresse">
+                        <p class="soustitre">Cette année ce sera plus simple si tu me livres directement à cette adresse :</p>
+                            <p><b>Déchetterie Du Sictom</b>
+                            <br>Route des Jasnières,
+                            <br>72340 La Chartre-sur-le-Loir
+                            <br>02 43 79 20 64</p>
+                        <p class="soustitre">Newsletter</p>
+                        <p>Père Noël, abonne-toi à ma newsletter pour recevoir en direct mes souhaits pour l'année prochaine.</p>
+                        <form action="">
+                            <input type="text" name="adressemail" id="adress" placeholder="adresse email">
+                            <br>
+                            <button>Je m'abonne</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    <!-- barre de pied de page -->
+    <footer class="barres">
+        <div>
+            <span>2019 &copy; CodeColiders</span>
+        </div>  
+    </footer>
+
+</body>
+</html>

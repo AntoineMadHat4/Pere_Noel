@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+/* definition des propriétés générales */
+body {
+    margin: 0;
+    background-image: url(assets/images/background.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.barres, button{
+    background-color: #d4423e;
+    color: white;
+}
+#title h3 {
+    text-align: center;
+    font-family: 'Dancing Script';
+    margin: 0;
+    padding: 15px;
+    font-size: 25px;
+}
+/* definition des propriétés générales */
+
+/* barre de navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 25px 15px;
+    width: 100%;
+}
+nav a:hover {
+    background-color: #b32c28;
+}
+@media screen and (min-width: 900px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul {
+        display: flex;
+    }
+}
+/* barre de navigation */
+
+/* container principal */
+h1, h2, .soustitre {
+    font-family: 'Dancing Script', sans-serif;
+    color: #d4423e;
+}
+main {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
+    margin: 60px 15px;
+    padding: 50px 25px;
+}
+@media screen and (min-width: 900px){
+    main {
+        width: 800px;
+        margin: 60px auto;
+    }
+}
+h1 {
+    text-align: center;
+}
+section {
+    margin-top: 60px;
+}
+/* container principal */
+
+/* section souhaits */
+#cadeaux {
+    display: grid;
+    grid-template-columns: 160px 160px;
+    gap: 50px;
+    justify-content: space-evenly;
+}
+/* changement de display au breakpoint */
+@media screen and (min-width: 900px) {
+    #cadeaux {
+        display: flex;
+        gap: 0;
+    }
+}
+#cadeaux img {
+    height: 160px;
+    width: 160px;
+}
+figure {
+    margin: 0 5px;
+}
+figcaption {
+    margin: -40px 0 0;
+    text-align: center;
+    background-color: black;
+    opacity: 0.75;
+    color: white;
+    padding: 10px;
+}
+/* section souhaits */
+
+/* section livraison */
+#livraison {
+    display: block;
+}
+/* changement de display au breakpoint */
+@media screen and (min-width: 900px) {
+    #livraison {
+        display: flex;
+    }
+}
+iframe {
+    width: 100%;
+    margin: 0 15px 0 0;
+}
+@media screen and (min-width: 900px) {
+    iframe {
+        width: 425px;
+    }
+}
+#adresse {
+    font-size: 14px;
+}
+.soustitre{
+    font-size: 18px;
+    font-weight: 700;
+}
+input {
+    height: 30px;
+    margin: 10px 0 0;
+    background-color: #fcfcfc;
+    border: solid 1px #d1d3d3;
+    border-radius: 3px;
+    padding: 0 10px;
+}
+button {
+    height: 30px;
+    margin: 10px 0 0;
+    border-radius: 3px;
+    padding: 0 10px;
+    border: none;
+}
+/* section livraison */
+
+footer {
+    height: 50px;
+    text-align: end;
+    padding: 15px 10px;
+}
